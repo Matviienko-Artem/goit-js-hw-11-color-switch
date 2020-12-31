@@ -32,7 +32,7 @@ function stopColorCircle() {
 function startColorCircle() {
   refs.btnStart.disabled = true;
   intervalId = setInterval(() => {
-    const randomNumber = randomIntegerFromInterval(0, 6);
+    const randomNumber = randomIntegerFromInterval(0, colors.length);
     refs.bodyRef.style.backgroundColor = `${colors[randomNumber]}`;
     console.log(randomNumber);
   }, 1000);
